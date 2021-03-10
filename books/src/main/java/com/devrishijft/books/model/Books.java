@@ -1,6 +1,12 @@
 package com.devrishijft.books.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "books")
 public class Books {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String title;
     private String author;
