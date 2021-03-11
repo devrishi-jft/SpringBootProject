@@ -3,6 +3,7 @@ package com.devrishijft.books.model;
 import javax.persistence.*;
 
 @Entity
+
 public class Books {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
