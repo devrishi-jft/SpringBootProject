@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/eclipse-plugin-update-site/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h1>inside thymeleaf</h1>
+<h2 th:text="${name}"></h2>
+<h2 th:text="${currentDate}"></h2>
+<h2>name of the owner is<span th:text="${name}"></span></h2>
+<ul>
+    <li th:each="n:${list}">
+        <span th:text="${n}"></span>
+    </li>
+</ul>
+</body>
+</html>
