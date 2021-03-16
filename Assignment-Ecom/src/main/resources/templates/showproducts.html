@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/eclipse-plugin-update-site/">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Products</title>
+</head>
+<body>
+<h2>Products list</h2>
+<table border="1" >
+    <thead>
+    <th>
+        <td>ID</td>
+        <td>NAME</td>
+        <td>BRAND</td>
+        <td>PRICE</td>
+    </th>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${listOfProducts}">
+        <td></td>
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.brand}"></td>
+        <td th:text="${product.price}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
