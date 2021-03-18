@@ -6,6 +6,7 @@
 </head>
 <body>
 <h2>Products list</h2>
+<a th:href="@{/admin/addForm}">add product</a>
 <table border="1" >
     <thead>
     <th>
@@ -22,6 +23,7 @@
         <td th:text="${product.name}"></td>
         <td th:text="${product.brand}"></td>
         <td th:text="${product.price}"></td>
+        <td><a th:href="@{'/admin/edit/' +${product.id}}" >Edit</a></td>
     </tr>
     </tbody>
 </table>
